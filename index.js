@@ -10,7 +10,7 @@ function createPost() {
   // link up template through lodash to script tag
   const postTemplate = _.template(document.getElementById('post-template').innerHTML);
   // grab where posts will go
-  const postDiv = document.getElementById('visible-posts');
+  const postDiv = document.getElementById('post');
 
   // add data into template
   const newPost = postTemplate({'title': title, 'content': content, 'author': author });
