@@ -15,7 +15,8 @@ function createPost() {
   postDiv.innerHTML += newPost;
 };
 
-function buildPageContent(){
+function renderPageContent(){
+  const pageTemplate = _.template(document.getElementById('page-template').innerHTML)
   const pageContent = document.getElementById('page-content');
 }
 function postComment() {
