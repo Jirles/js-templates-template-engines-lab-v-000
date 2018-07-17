@@ -19,11 +19,10 @@ function postComment() {
   const commenter = document.getElementById('comment-commenter').value;
 
   const newCommentTemplate = _.template(document.getElementById('comment-template').innerHTML);
-  const commentsTemplate = _.template(document.getElementById('comments-template').innerHTML);
-  const pageTemplate = _.template(document.getElementById('page-template').innerHTML);
+
+  const commentsDiv = document.getElementById('visible-comments');
 
   const newComment = newCommentTemplate({'comment': comment, 'commenter': commenter});
 
-   += commentsTemplate('comments': newComment);
-  pageTemplate += pageTemplate('comments': commentsTemplate);
+  commentsDiv.innerHTML += newComment;
 };
