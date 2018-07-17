@@ -20,7 +20,7 @@ function createPost() {
 
 function buildPageContent(){
   const pageContent = document.getElementById('page-content');
-  pageContent.innerHTML += document.getElementById('page-template').innerHTML
+  pageContent.innerHTML += _.template(document.getElementById('page-template').innerHTML);
 
   const sidebar = document.querySelector('#sidebar');
   sidebar.innerHTML += document.getElementById('comments-template').innerHTML;
