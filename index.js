@@ -22,7 +22,7 @@ function buildPageContent(){
   const pageContent = document.getElementById('page-content');
   pageContent.innerHTML += document.getElementById('page-template').innerHTML
 
-  const sidebar = pageContent.getElementById('sidebar');
+  const sidebar = pageContent.innerHTML.getElementById('sidebar');
   sidebar.innerHTML += document.getElementById('comments-template').innerHTML;
 };
 
