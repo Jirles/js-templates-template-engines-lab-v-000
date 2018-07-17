@@ -21,6 +21,8 @@ function createPost() {
 function renderPageContent(){
   const pageContent = document.getElementById('page-content');
   const pageTemplate = _.template(document.getElementById('page-template').innerHTML)
+
+  pageContent += pageTemplate
 };
 
 function postComment() {
