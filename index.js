@@ -23,7 +23,7 @@ function buildPageContent(){
   pageContent.innerHTML += _.template(document.getElementById('page-template').innerHTML);
 
   const sidebar = document.querySelector('#sidebar');
-  sidebar.innerHTML += document.getElementById('comments-template').innerHTML;
+  sidebar.innerHTML += _.template(document.getElementById('comments-template').innerHTML);
 };
 
 function postComment() {
