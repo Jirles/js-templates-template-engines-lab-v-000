@@ -15,12 +15,6 @@ function createPost() {
   postDiv.innerHTML += newPost;
 };
 
-function renderPageContent(){
-  const pageTemplate = _.template(document.getElementById('page-template').innerHTML)
-
-  const pageContent = document.getElementById('page-content');
-  // div with id=posts and div with id=sidebar 
-}
 function postComment() {
   const comment = document.getElementById('comment-content').value;
   const commenter = document.getElementById('comment-commenter').value;
