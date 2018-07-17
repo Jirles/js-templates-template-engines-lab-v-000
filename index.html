@@ -38,8 +38,8 @@
     <!-- comments template to hold all comments -->
     <script id="comments-template" type="text/x-lodash-template">
       <form onsubmit="postComment();" id="template-comment-form" >
-        Comment: <textarea id="template-comment-content" rows="8" cols="80"></textarea>br>
-        Name: <input type="text" id="template-comment-author" /><br>
+        Comment: <textarea id="comment-content" rows="8" cols="80"></textarea>br>
+        Name: <input type="text" id="comment-author" /><br>
         <input type="submit" name="Post Comment" />
       </form>
       <div id="comments"><%- comments %></div>
