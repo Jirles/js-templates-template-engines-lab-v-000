@@ -16,7 +16,7 @@ function createPost() {
 
 function postComment() {
   const comment = document.querySeletor('script #template-comment-content').value;
-  const commenter = document.getElementById('comment-commenter').value;
+  const commenter = document.querySelector('script #template-comment-commenter').value;
 
   const newCommentTemplate = _.template(document.getElementById('comment-template').innerHTML);
 
