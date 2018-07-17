@@ -1,7 +1,7 @@
 function createPost() {
   // build page-content?
   if (document.getElementById('page-content').innerHTML === '') {
-    renderPageContent();
+    buildPageContent();
   }
   // grab values from form
   const title = document.getElementById('post-title').value;
@@ -21,7 +21,7 @@ function createPost() {
 function buildPageContent(){
   const pageContent = document.getElementById('page-content');
 
-  pageContent += document.getElementById('page-template').innerHTML
+  pageContent.innerHTML += document.getElementById('page-template').innerHTML
 };
 
 function postComment() {
