@@ -14,17 +14,10 @@
       <div id="visible-posts">
 
       </div>
-      <form onsubmit="postComment();" >
-        Comment: <textarea id="comment-content" rows="8" cols="80"></textarea>br>
-        Name: <input type="text" id="comment-author" /><br>
-        <input type="submit" name="Post Comment" />
-      </form>
-      <div id="visible-comments">
-
-      </div>
     </main>
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
+    <!-- page template to hold posts and comments-->
     <script id="page-template" type="text/x-lodash-template">
       <div id="post">
 
@@ -33,6 +26,7 @@
 
       </div>
     </script>
+    <!-- post template for individual posts -->
     <script id="post-template" type="text/x-lodash-template">
       <article class="post-container">
         <header><h2><%- title %></h2></header>
