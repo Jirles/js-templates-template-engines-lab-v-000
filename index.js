@@ -32,7 +32,7 @@ function postComment() {
 
   const newCommentTemplate = _.template(document.getElementById('comment-template').innerHTML);
 
-  const commentsDiv = document.getElementById('visible-comments');
+  const commentsDiv = document.getElementById('comments');
 
   const newComment = newCommentTemplate({'comment': comment, 'commenter': commenter});
 
