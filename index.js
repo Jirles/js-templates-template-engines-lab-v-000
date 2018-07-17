@@ -1,5 +1,8 @@
 function createPost() {
   // build page-content?
+  if (document.getElementById('page-content').innerHTML === '') {
+    renderPageContent();
+  }
   // grab values from form
   const title = document.getElementById('post-title').value;
   const content = document.getElementById('post-content').value;
