@@ -28,7 +28,7 @@ function buildPageContent(){
 
 function postComment() {
   const comment = document.getElementById('comment-content').value;
-  const commenter = document.getElementById('comment-commenter').value;
+  const commenter = document.getElementById('comment-author').value;
 
   const newCommentTemplate = _.template(document.getElementById('comment-template').innerHTML);
 
