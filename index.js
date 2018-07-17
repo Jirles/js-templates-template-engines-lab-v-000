@@ -1,5 +1,5 @@
 function createPost() {
-  // build page-content? 
+  // build page-content?
   // grab values from form
   const title = document.getElementById('post-title').value;
   const content = document.getElementById('post-content').value;
@@ -15,6 +15,9 @@ function createPost() {
   postDiv.innerHTML += newPost;
 };
 
+function buildPageContent(){
+  const pageContent = document.getElementById('page-content');
+}
 function postComment() {
   const comment = document.getElementById('comment-content').value;
   const commenter = document.getElementById('comment-commenter').value;
