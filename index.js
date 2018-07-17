@@ -18,6 +18,11 @@ function createPost() {
   postDiv.innerHTML += newPost;
 };
 
+function renderPageContent(){
+  const pageContent = document.getElementById('page-content');
+  const pageTemplate = _.template(document.getElementById('page-template').innerHTML)
+};
+
 function postComment() {
   const comment = document.getElementById('comment-content').value;
   const commenter = document.getElementById('comment-commenter').value;
