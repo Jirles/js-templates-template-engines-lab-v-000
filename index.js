@@ -1,5 +1,5 @@
 function createPost() {
-  // build page-content?
+  // if first post ever build page-content
   if (document.getElementById('page-content').innerHTML === '') {
     buildPageContent();
   }
