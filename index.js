@@ -1,4 +1,5 @@
 function createPost() {
+  // build page-content? 
   // grab values from form
   const title = document.getElementById('post-title').value;
   const content = document.getElementById('post-content').value;
