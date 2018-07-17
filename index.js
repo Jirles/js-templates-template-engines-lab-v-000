@@ -5,7 +5,6 @@ function createPost() {
   const author = document.getElementById('post-author').value;
   // link up template through lodash to script tag
   const postTemplate = _.template(document.getElementById('post-template').innerHTML);
-  const pageTemplate = _.template(document.getElementById('page-template').innerHTML);
   // grab where posts will go
   const postDiv = document.getElementById('visible-posts');
 
